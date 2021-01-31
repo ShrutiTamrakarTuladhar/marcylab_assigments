@@ -1,4 +1,4 @@
-<h1>HTML/CSS Layout Challenge</h1>
+# HTML/CSS Layout Challenge
 
 Your challenges is to recreate this mockup (Links to an external site.) using HTML and CSS. You are not allowed to use CSS frameworks such as bootstrap. You are not allowed to use JavaScript frameworks such as React or Angular. This challenge is designed for you to reinforce the fundamentals that all of these frameworks are built upon.
 
