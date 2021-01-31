@@ -1,0 +1,61 @@
+<!-- Hints:
+- The key features of this layout that must be replicated 
+are the navbar, header, and two-column section at the 
+bottom of the page.
+
+- As the page size grows and shrinks, the navbar, header, 
+and two-column sections should grow and shrink with it 
+(take up all horizonatally avaliable space).
+
+- Ensure that you are rendering has one narrow column and 
+one wide column (and you use flexbox to achieve this effect! 😉) 
+
+- Look at the border-radius property if you are stuck on how 
+to make a picture round.
+
+- There should be no floats.
+-->
+
+<!DOCTYPE html>
+  <html lang = "en-US">
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <a id="title" class="tabs">XYZ Design Group Ltd.</a>
+      <a id="team" class="tabs">Team</a>
+      <a class="tabs">About Us</a>
+      <a class="tabs">Home</a>
+    </div>
+    <div id="main">
+      <div id="circle"></div>
+    </div>
+
+    <div class="row">
+      <div class="columnOne">
+        <p class="subs">Our Team</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.</p>
+        <img alt="stock img" src="https://via.placeholder.com/300X150">
+      </div>
+      <div class="columnTwo">
+        <p class="subs">Our Mission</p>
+        <p>porem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Aliquam in ex et eros laoreet 
+          eleifend tristique id risus. Pellentesque fringilla finibus augue non ultrices.</p>
+        <p>Aenean sed interdum odio, ac feugiat diam. Etiam vitae lobortis sem. 
+          Nulla venenatis eget erat non bibendum. Praesent bibendum sodales mi 
+          sed tristique.Proin iaculis vestibulum nulla, eu pellentesque 
+          tellus venenatis a. Curabitur commodo aliquet tortor nec volutpat. 
+          Nunc at dolor vestibulum, ultrices mauris eu, laoreet sem. In sagittis 
+          urna sagittis, mollis felis et, rhoncus nulla. Donec iaculis a ex non finibus.</p>
+      </div>
+    </div>
+  </body>
+</html>
