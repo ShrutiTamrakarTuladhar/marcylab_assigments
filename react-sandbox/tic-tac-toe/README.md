@@ -111,3 +111,45 @@ onClick={() => this.props.onClick()}
 onClick={props.onClick}
 
 ```
+
+## Tasking Turns
+
+- Defult with 'x' making the first move by creating a boolean attrubite in Boards this.state object called xIsNext
+
+- To take turns xIsNext should be fliped (True <=> False). This should be done each time the board is clicked so the handleClick should be modified
+
+```JSX
+
+squares[i] = this.state.xIsNext ? 'X' : 'O';
+
+// If xIsNext is true set squares[i] to X else set the value to O.
+
+xIsNext: !this.state.xIsNext
+
+// sets xIsNext to the opposite to what it was previously
+
+const status = 'Next player:' + (this.state.xIsNext ? 'X' : 'O');
+
+// changes the status text bepending on the value of xIsNext.
+```
+
+## Delcaring a Winner
+
+The helper function list the 8 possible ways to win(3 vertical, 3 horozontal and 2 diagonall)
+
+```JSX
+
+if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c])
+
+// if there is a value for square a and value at square a equals to b and c return value of square a else return false;
+```
+
+## Adding Time Travel
+
+- This is possible because the Squares array is immutable.
+
+- Past squares are bing stored in a array called history - and array of objects that holds arrays
+
+lifiting up the Game (App) component to have access to the history data thus having full control over the BOARD componenet
+
+.concat() method does not change the orginial array so is prefred to .push() method
